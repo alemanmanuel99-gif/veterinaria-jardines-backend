@@ -1,0 +1,32 @@
+{
+  "name": "veterinaria-jardines-backend",
+  "version": "1.0.0",
+  "description": "Backend API para el formulario de citas de Veterinaria Jardines",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "get-refresh-token": "node scripts/get-google-refresh-token.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0",
+    "ics": "^3.7.2",
+    "mysql2": "^3.11.5",
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.2",
+    "@types/nodemailer": "^6.4.17",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  }
+}
